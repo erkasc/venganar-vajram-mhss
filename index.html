@@ -1,0 +1,2644 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071425" />
+    <title>Venganar Vajram Matric Hr. Sec. School | Pappireddipatti</title>
+    <meta
+      name="description"
+      content="Venganar Vajram Matric Hr. Sec. School, Pappireddipatti – 636905, Dharmapuri District. Ultra-modern premium school website."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- AOS (optional) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <style>
+      :root {
+        --bg-0: #050b16;
+        --bg-1: #071425;
+        --bg-2: #0a2440;
+        --card: rgba(255, 255, 255, 0.08);
+        --card-2: rgba(255, 255, 255, 0.06);
+        --stroke: rgba(255, 255, 255, 0.14);
+        --stroke-2: rgba(255, 255, 255, 0.10);
+        --text: rgba(255, 255, 255, 0.92);
+        --muted: rgba(255, 255, 255, 0.70);
+        --muted-2: rgba(255, 255, 255, 0.55);
+        --gold: #d6b25e;
+        --gold-2: #f3d27b;
+        --blue: #2f6bff;
+        --cyan: #22d3ee;
+        --shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+        --shadow-soft: 0 14px 40px rgba(0, 0, 0, 0.32);
+        --radius: 18px;
+        --radius-2: 26px;
+        --container: 1160px;
+        --blur: 16px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        color: var(--text);
+        background: radial-gradient(1200px 900px at 20% 0%, #133f76 0%, rgba(19, 63, 118, 0) 55%),
+          radial-gradient(1000px 800px at 80% 15%, rgba(34, 211, 238, 0.22) 0%, rgba(34, 211, 238, 0) 60%),
+          linear-gradient(135deg, var(--bg-2) 0%, var(--bg-1) 35%, var(--bg-0) 100%);
+        overflow-x: hidden;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      .container {
+        width: min(var(--container), calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      /* Decorative glows */
+      .glow {
+        position: fixed;
+        inset: auto auto 0 auto;
+        width: 520px;
+        height: 520px;
+        border-radius: 50%;
+        filter: blur(70px);
+        opacity: 0.55;
+        pointer-events: none;
+        z-index: -1;
+        background: radial-gradient(circle at 30% 30%, rgba(214, 178, 94, 0.35), rgba(47, 107, 255, 0.0) 55%);
+      }
+      .glow.g1 {
+        left: -160px;
+        bottom: -220px;
+      }
+      .glow.g2 {
+        right: -180px;
+        top: 80px;
+        bottom: auto;
+        background: radial-gradient(circle at 50% 40%, rgba(34, 211, 238, 0.25), rgba(214, 178, 94, 0.0) 60%);
+      }
+
+      /* Navbar */
+      .nav {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        transition: background 240ms ease, border-color 240ms ease, box-shadow 240ms ease;
+        background: rgba(5, 11, 22, 0.0);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.0);
+      }
+      .nav.is-solid {
+        background: rgba(5, 11, 22, 0.72);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 12px 34px rgba(0, 0, 0, 0.32);
+      }
+
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 14px 0;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 220px;
+      }
+      .brand .logo {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid rgba(214, 178, 94, 0.38);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+        background: rgba(255, 255, 255, 0.06);
+        display: grid;
+        place-items: center;
+      }
+      .brand .logo .fallback {
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        color: rgba(255, 255, 255, 0.86);
+        font-size: 14px;
+      }
+      .brand .name {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.1;
+      }
+      .brand .name strong {
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+      }
+      .brand .name span {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .nav-links a {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.80);
+        letter-spacing: 0.02em;
+        padding: 10px 10px;
+        border-radius: 999px;
+        transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+      }
+      .nav-links a:hover {
+        color: rgba(255, 255, 255, 0.95);
+        background: rgba(255, 255, 255, 0.08);
+        transform: translateY(-1px);
+      }
+      .nav-cta {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 8px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 12px 16px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        background: rgba(255, 255, 255, 0.06);
+        color: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        cursor: pointer;
+        transition: transform 180ms ease, background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.02em;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+        background: rgba(255, 255, 255, 0.09);
+        border-color: rgba(214, 178, 94, 0.30);
+        box-shadow: 0 18px 44px rgba(0, 0, 0, 0.30);
+      }
+      .btn:active {
+        transform: translateY(0px);
+      }
+
+      .btn-primary {
+        border-color: rgba(214, 178, 94, 0.42);
+        background: linear-gradient(135deg, rgba(214, 178, 94, 0.25), rgba(47, 107, 255, 0.18));
+      }
+      .btn-primary:hover {
+        border-color: rgba(243, 210, 123, 0.55);
+      }
+
+      .icon-btn {
+        width: 44px;
+        height: 44px;
+        padding: 0;
+      }
+
+      .hamburger {
+        display: none;
+      }
+
+      /* Mobile menu */
+      .mobile-panel {
+        display: none;
+        margin-bottom: 12px;
+      }
+      .mobile-panel.is-open {
+        display: block;
+      }
+      .mobile-panel .glass {
+        border-radius: 18px;
+        padding: 14px;
+      }
+      .mobile-panel a {
+        display: block;
+        padding: 12px 10px;
+        border-radius: 12px;
+        color: rgba(255, 255, 255, 0.84);
+        transition: background 160ms ease;
+      }
+      .mobile-panel a:hover {
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      /* Sections */
+      section {
+        position: relative;
+      }
+
+      .section {
+        padding: 92px 0;
+      }
+
+      .section-head {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 18px;
+        margin-bottom: 28px;
+      }
+      .kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        backdrop-filter: blur(var(--blur));
+        -webkit-backdrop-filter: blur(var(--blur));
+        color: rgba(255, 255, 255, 0.84);
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .kicker i {
+        color: var(--gold);
+      }
+
+      h2 {
+        margin: 12px 0 8px;
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        font-size: clamp(26px, 4.2vw, 40px);
+      }
+      .sub {
+        margin: 0;
+        color: var(--muted);
+        max-width: 62ch;
+      }
+
+      .glass {
+        background: var(--card);
+        border: 1px solid var(--stroke);
+        box-shadow: var(--shadow-soft);
+        backdrop-filter: blur(var(--blur));
+        -webkit-backdrop-filter: blur(var(--blur));
+      }
+
+      .grid {
+        display: grid;
+        gap: 18px;
+      }
+
+      /* Hero */
+      .hero {
+        min-height: 92vh;
+        display: grid;
+        align-items: center;
+        padding: 86px 0 40px;
+        overflow: hidden;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(180deg, rgba(5, 11, 22, 0.65), rgba(5, 11, 22, 0.72)),
+          url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=2400&q=70");
+        background-size: cover;
+        background-position: center;
+        filter: saturate(1.05) contrast(1.02);
+        z-index: -2;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(1000px 800px at 20% 20%, rgba(47, 107, 255, 0.24), rgba(47, 107, 255, 0.0) 60%),
+          radial-gradient(900px 700px at 80% 40%, rgba(214, 178, 94, 0.22), rgba(214, 178, 94, 0.0) 60%);
+        z-index: -1;
+      }
+
+      .hero-inner {
+        display: grid;
+        grid-template-columns: 1.25fr 0.75fr;
+        gap: 22px;
+        align-items: center;
+      }
+
+      .hero-card {
+        border-radius: var(--radius-2);
+        padding: 26px;
+        position: relative;
+        overflow: hidden;
+        animation: floaty 6s ease-in-out infinite;
+      }
+      .hero-card::before {
+        content: "";
+        position: absolute;
+        inset: -120px -100px auto auto;
+        width: 320px;
+        height: 320px;
+        background: radial-gradient(circle at 30% 30%, rgba(243, 210, 123, 0.35), rgba(243, 210, 123, 0.0) 60%);
+        filter: blur(10px);
+        opacity: 0.9;
+      }
+
+      .hero-title {
+        margin: 10px 0 10px;
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+        line-height: 1.06;
+        font-size: clamp(30px, 5vw, 54px);
+      }
+      .hero-title .shine {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.92), rgba(243, 210, 123, 0.95), rgba(255, 255, 255, 0.92));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        background-size: 200% 100%;
+        animation: shimmer 3.4s ease-in-out infinite;
+      }
+      .hero-lead {
+        margin: 0 0 18px;
+        color: rgba(255, 255, 255, 0.82);
+        max-width: 65ch;
+        font-size: 15px;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .hero-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 18px;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 12px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 12px;
+      }
+      .badge i {
+        color: var(--gold);
+      }
+
+      .hero-side {
+        border-radius: var(--radius-2);
+        padding: 18px;
+      }
+      .hero-side .mini {
+        border-radius: 18px;
+        padding: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.05);
+      }
+      .mini + .mini {
+        margin-top: 12px;
+      }
+      .mini h4 {
+        margin: 0 0 6px;
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+      }
+      .mini p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      /* About */
+      .about {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 20px;
+        align-items: stretch;
+      }
+      .about-media {
+        border-radius: var(--radius-2);
+        overflow: hidden;
+        min-height: 340px;
+        background:
+          linear-gradient(180deg, rgba(5, 11, 22, 0.0), rgba(5, 11, 22, 0.72)),
+          url("https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1800&q=70");
+        background-size: cover;
+        background-position: center;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        box-shadow: var(--shadow-soft);
+      }
+      .about-card {
+        border-radius: var(--radius-2);
+        padding: 22px;
+      }
+      .about-card h3 {
+        margin: 10px 0 10px;
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+        font-size: 22px;
+      }
+      .about-card p {
+        margin: 0 0 12px;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.7;
+      }
+      .bullets {
+        margin: 14px 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+      .bullets li {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 13px;
+      }
+      .bullets i {
+        margin-top: 2px;
+        color: var(--gold);
+      }
+
+      /* Leadership */
+      .leadership-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .leader {
+        border-radius: var(--radius-2);
+        padding: 18px;
+        position: relative;
+        overflow: hidden;
+        transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+      }
+      .leader:hover {
+        transform: translateY(-6px);
+        border-color: rgba(214, 178, 94, 0.26);
+        box-shadow: 0 26px 70px rgba(0, 0, 0, 0.38);
+      }
+      .leader .top {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .avatar {
+        width: 52px;
+        height: 52px;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        background: linear-gradient(135deg, rgba(47, 107, 255, 0.20), rgba(214, 178, 94, 0.14));
+        display: grid;
+        place-items: center;
+      }
+      .avatar i {
+        color: rgba(255, 255, 255, 0.86);
+      }
+      .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .leader h4 {
+        margin: 0;
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+        font-size: 15px;
+      }
+      .leader .role {
+        margin: 2px 0 0;
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .leader .desc {
+        margin: 12px 0 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.65;
+      }
+      .leader .meta {
+        display: flex;
+        gap: 10px;
+        margin-top: 12px;
+        flex-wrap: wrap;
+      }
+      .chip {
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.05);
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 12px;
+      }
+      .chip i {
+        color: var(--gold);
+      }
+
+      /* Academics */
+      .acad-grid {
+        grid-template-columns: repeat(3, 1fr);
+        perspective: 1200px;
+      }
+      .acad {
+        border-radius: var(--radius-2);
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+        transform-style: preserve-3d;
+        transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+      }
+      .acad:hover {
+        transform: translateY(-8px) rotateX(6deg) rotateY(-8deg);
+        box-shadow: 0 34px 90px rgba(0, 0, 0, 0.42);
+        border-color: rgba(214, 178, 94, 0.22);
+      }
+      .acad .icon {
+        width: 54px;
+        height: 54px;
+        border-radius: 16px;
+        background: linear-gradient(135deg, rgba(47, 107, 255, 0.35), rgba(34, 211, 238, 0.22));
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        display: grid;
+        place-items: center;
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.26);
+        transform: translateZ(24px);
+      }
+      .acad .icon i {
+        color: rgba(255, 255, 255, 0.92);
+        font-size: 18px;
+      }
+      .acad h3 {
+        margin: 14px 0 8px;
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+        font-size: 18px;
+        transform: translateZ(18px);
+      }
+      .acad p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.7;
+        transform: translateZ(14px);
+      }
+      .acad .accent {
+        position: absolute;
+        inset: -70px -90px auto auto;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 30% 30%, rgba(214, 178, 94, 0.26), rgba(214, 178, 94, 0.0) 60%);
+        filter: blur(12px);
+      }
+
+      /* Facilities / Labs */
+      .fac-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .fac {
+        border-radius: var(--radius-2);
+        padding: 18px;
+        position: relative;
+        overflow: hidden;
+        transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+      }
+      .fac::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        transition: opacity 220ms ease;
+        background: radial-gradient(700px 220px at 50% 0%, rgba(214, 178, 94, 0.18), rgba(214, 178, 94, 0.0) 60%);
+      }
+      .fac:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 28px 70px rgba(0, 0, 0, 0.40);
+        border-color: rgba(214, 178, 94, 0.22);
+      }
+      .fac:hover::before {
+        opacity: 1;
+      }
+      .fac .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        position: relative;
+        z-index: 1;
+      }
+      .fac .pill {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: linear-gradient(135deg, rgba(34, 211, 238, 0.24), rgba(47, 107, 255, 0.20));
+      }
+      .fac .pill i {
+        color: rgba(255, 255, 255, 0.92);
+      }
+      .fac h4 {
+        margin: 12px 0 8px;
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 900;
+        font-size: 15px;
+        letter-spacing: 0.02em;
+        position: relative;
+        z-index: 1;
+      }
+      .fac p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.65;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Stats */
+      .stats {
+        padding: 64px 0;
+      }
+      .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .stat {
+        border-radius: var(--radius-2);
+        padding: 18px;
+        text-align: center;
+      }
+      .stat .num {
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 900;
+        font-size: 34px;
+        margin: 0;
+        letter-spacing: 0.02em;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.92), rgba(243, 210, 123, 0.95));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .stat .label {
+        margin: 8px 0 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      /* Gallery */
+      .gallery-grid {
+        grid-template-columns: repeat(12, 1fr);
+      }
+      .g-item {
+        grid-column: span 4;
+        border-radius: var(--radius-2);
+        overflow: hidden;
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: var(--shadow-soft);
+        cursor: pointer;
+        min-height: 210px;
+      }
+      .g-item .img {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        transform: scale(1.02);
+        transition: transform 260ms ease;
+        filter: saturate(1.05) contrast(1.02);
+      }
+      .g-item:hover .img {
+        transform: scale(1.10);
+      }
+      .g-item::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(5, 11, 22, 0.0), rgba(5, 11, 22, 0.72));
+        opacity: 0.9;
+      }
+      .g-item .cap {
+        position: absolute;
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+        z-index: 1;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .g-item .cap strong {
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+        font-size: 14px;
+      }
+      .g-item .cap span {
+        color: var(--muted);
+        font-size: 12px;
+      }
+      .g-item .cap i {
+        color: var(--gold);
+        opacity: 0.9;
+      }
+
+      /* Lightbox */
+      .lightbox {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.72);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 26px;
+        z-index: 120;
+      }
+      .lightbox.is-open {
+        display: flex;
+      }
+      .lightbox .panel {
+        width: min(980px, 100%);
+        border-radius: 22px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        background: rgba(6, 14, 28, 0.78);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        box-shadow: 0 40px 120px rgba(0, 0, 0, 0.65);
+      }
+      .lightbox .media {
+        width: 100%;
+        height: min(62vh, 520px);
+        background-size: cover;
+        background-position: center;
+      }
+      .lightbox .bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 14px 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .lightbox .bar .txt {
+        min-width: 0;
+      }
+      .lightbox .bar strong {
+        display: block;
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+        font-size: 14px;
+      }
+      .lightbox .bar span {
+        display: block;
+        color: var(--muted);
+        font-size: 12px;
+        margin-top: 2px;
+      }
+
+      /* Contact */
+      .contact {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 18px;
+        align-items: start;
+      }
+      .form {
+        border-radius: var(--radius-2);
+        padding: 18px;
+      }
+      .form h3 {
+        margin: 4px 0 12px;
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+      }
+      .fields {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      .field {
+        position: relative;
+      }
+      .field.full {
+        grid-column: 1 / -1;
+      }
+      .field input,
+      .field textarea,
+      .field select {
+        width: 100%;
+        padding: 16px 14px 12px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        background: rgba(255, 255, 255, 0.06);
+        color: rgba(255, 255, 255, 0.90);
+        outline: none;
+        font: inherit;
+        transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+      }
+      .field textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+      .field label {
+        position: absolute;
+        left: 14px;
+        top: 14px;
+        color: rgba(255, 255, 255, 0.58);
+        font-size: 13px;
+        pointer-events: none;
+        transition: transform 160ms ease, color 160ms ease, opacity 160ms ease;
+        transform-origin: left top;
+      }
+      .field input:focus,
+      .field textarea:focus,
+      .field select:focus {
+        border-color: rgba(214, 178, 94, 0.36);
+        box-shadow: 0 0 0 4px rgba(214, 178, 94, 0.14);
+        background: rgba(255, 255, 255, 0.08);
+      }
+      .field input:not(:placeholder-shown) + label,
+      .field textarea:not(:placeholder-shown) + label,
+      .field select:valid + label,
+      .field input:focus + label,
+      .field textarea:focus + label,
+      .field select:focus + label {
+        transform: translateY(-10px) scale(0.88);
+        color: rgba(243, 210, 123, 0.88);
+        opacity: 0.98;
+      }
+
+      .contact-side {
+        border-radius: var(--radius-2);
+        padding: 18px;
+      }
+      .contact-side h3 {
+        margin: 4px 0 10px;
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+      }
+      .info {
+        display: grid;
+        gap: 10px;
+        margin-bottom: 14px;
+      }
+      .info .line {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 13px;
+      }
+      .info i {
+        color: var(--gold);
+        margin-top: 3px;
+      }
+      .map {
+        border-radius: 18px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        min-height: 300px;
+        background: rgba(255, 255, 255, 0.05);
+      }
+      .map iframe {
+        width: 100%;
+        height: 320px;
+        border: 0;
+        filter: grayscale(0.25) contrast(1.05) saturate(1.05);
+      }
+
+      /* Footer */
+      footer {
+        padding: 42px 0 28px;
+        border-top: 1px solid rgba(214, 178, 94, 0.18);
+        background: linear-gradient(180deg, rgba(5, 11, 22, 0.0), rgba(5, 11, 22, 0.72));
+      }
+      .foot {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr;
+        gap: 18px;
+      }
+      .foot h4 {
+        margin: 0 0 10px;
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+        font-size: 14px;
+      }
+      .foot p,
+      .foot a {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.7;
+      }
+      .foot a:hover {
+        color: rgba(255, 255, 255, 0.90);
+      }
+      .social {
+        display: flex;
+        gap: 10px;
+        margin-top: 12px;
+      }
+      .social a {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.06);
+        transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+      }
+      .social a:hover {
+        transform: translateY(-3px);
+        border-color: rgba(214, 178, 94, 0.30);
+        background: rgba(255, 255, 255, 0.08);
+      }
+      .copyright {
+        margin-top: 18px;
+        padding-top: 18px;
+        border-top: 1px solid rgba(255, 255, 255, 0.10);
+        color: rgba(255, 255, 255, 0.62);
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .goldline {
+        height: 1px;
+        width: 100%;
+        background: linear-gradient(90deg, rgba(214, 178, 94, 0.0), rgba(214, 178, 94, 0.55), rgba(214, 178, 94, 0.0));
+        margin: 10px 0 0;
+      }
+
+      /* Admin floating button + modal */
+      .admin-fab {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 90;
+        border-radius: 999px;
+        padding: 12px 14px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid rgba(214, 178, 94, 0.38);
+        background: rgba(5, 11, 22, 0.62);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        color: rgba(255, 255, 255, 0.90);
+        box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+        cursor: pointer;
+        transition: transform 180ms ease, background 180ms ease;
+      }
+      .admin-fab:hover {
+        transform: translateY(-3px);
+        background: rgba(5, 11, 22, 0.74);
+      }
+
+      .modal {
+        position: fixed;
+        inset: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 22px;
+        z-index: 140;
+        background: rgba(0, 0, 0, 0.65);
+      }
+      .modal.is-open {
+        display: flex;
+      }
+      .modal .sheet {
+        width: min(1100px, 100%);
+        max-height: min(84vh, 760px);
+        overflow: hidden;
+        border-radius: 22px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        background: rgba(6, 14, 28, 0.80);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        box-shadow: 0 50px 140px rgba(0, 0, 0, 0.70);
+        display: grid;
+        grid-template-rows: auto 1fr;
+      }
+      .modal .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 14px 14px 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .modal .title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 0;
+      }
+      .modal .title strong {
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+      }
+      .modal .title span {
+        color: var(--muted);
+        font-size: 12px;
+      }
+      .modal .body {
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        min-height: 0;
+      }
+      .tabs {
+        padding: 14px;
+        border-right: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .tab {
+        width: 100%;
+        text-align: left;
+        padding: 12px 12px;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.05);
+        color: rgba(255, 255, 255, 0.86);
+        cursor: pointer;
+        transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .tab + .tab {
+        margin-top: 10px;
+      }
+      .tab.is-active,
+      .tab:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(214, 178, 94, 0.22);
+        transform: translateY(-1px);
+      }
+      .panel {
+        padding: 14px;
+        overflow: auto;
+      }
+      .panel h3 {
+        margin: 4px 0 12px;
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+      }
+      .admin-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      .admin-card {
+        border-radius: 18px;
+        padding: 14px;
+      }
+      .admin-card h4 {
+        margin: 0 0 10px;
+        font-family: Montserrat, Poppins, sans-serif;
+        font-weight: 900;
+        letter-spacing: 0.02em;
+        font-size: 14px;
+      }
+      .admin-list {
+        display: grid;
+        gap: 10px;
+      }
+      .item-row {
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.05);
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .item-row .txt {
+        min-width: 0;
+      }
+      .item-row strong {
+        display: block;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.01em;
+        font-family: Montserrat, Poppins, sans-serif;
+      }
+      .item-row span {
+        display: block;
+        font-size: 12px;
+        color: var(--muted);
+        margin-top: 2px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 520px;
+      }
+      .row-actions {
+        display: flex;
+        gap: 8px;
+        flex-shrink: 0;
+      }
+      .small {
+        padding: 10px 12px;
+        font-size: 12px;
+        box-shadow: none;
+      }
+
+      .admin-form {
+        display: grid;
+        gap: 10px;
+      }
+      .admin-form .fields {
+        grid-template-columns: 1fr 1fr;
+      }
+      .admin-form .note {
+        font-size: 12px;
+        color: var(--muted);
+        margin: 0;
+      }
+      .danger {
+        border-color: rgba(255, 84, 84, 0.34);
+        background: rgba(255, 84, 84, 0.10);
+      }
+      .danger:hover {
+        border-color: rgba(255, 84, 84, 0.50);
+      }
+
+      /* Helpers */
+      .muted {
+        color: var(--muted);
+      }
+      .hide {
+        display: none !important;
+      }
+
+      /* Responsive */
+      @media (max-width: 980px) {
+        .hero-inner {
+          grid-template-columns: 1fr;
+        }
+        .hero-side {
+          order: -1;
+        }
+        .about {
+          grid-template-columns: 1fr;
+        }
+        .leadership-grid {
+          grid-template-columns: 1fr;
+        }
+        .acad-grid {
+          grid-template-columns: 1fr;
+        }
+        .fac-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .stats-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .contact {
+          grid-template-columns: 1fr;
+        }
+        .foot {
+          grid-template-columns: 1fr;
+        }
+        .modal .body {
+          grid-template-columns: 1fr;
+        }
+        .tabs {
+          border-right: 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 10px;
+        }
+        .tab + .tab {
+          margin-top: 0;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .nav-links,
+        .nav-cta {
+          display: none;
+        }
+        .hamburger {
+          display: inline-flex;
+        }
+        .fields {
+          grid-template-columns: 1fr;
+        }
+        .g-item {
+          grid-column: span 12;
+        }
+        .admin-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Animations */
+      @keyframes floaty {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      @keyframes shimmer {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      /* Reduce motion */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 1ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 1ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="glow g1"></div>
+    <div class="glow g2"></div>
+
+    <!-- NAV -->
+    <header class="nav" id="nav">
+      <div class="container">
+        <div class="nav-inner">
+          <a class="brand" href="#home" aria-label="Go to Home">
+            <div class="logo" aria-hidden="true">
+              <img
+                id="logoImg"
+                src="circular-image%20-%20Copy.png"
+                alt=""
+                style="width: 100%; height: 100%; object-fit: cover"
+                onerror="this.remove(); document.getElementById('logoFallback').classList.remove('hide');"
+              />
+              <span id="logoFallback" class="fallback hide">V V</span>
+            </div>
+            <div class="name">
+              <strong>VENGANAR VAJRAM</strong>
+              <span>Matric Hr. Sec. School • Pappireddipatti</span>
+            </div>
+          </a>
+
+          <nav class="nav-links" aria-label="Primary Navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#academics">Academics</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <div class="nav-cta">
+            <a class="btn btn-primary" href="#contact"><i class="fa-solid fa-file-signature"></i> Admission Open</a>
+            <a class="btn" href="#gallery"><i class="fa-regular fa-images"></i> Explore Campus</a>
+          </div>
+
+          <button class="btn icon-btn hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="mobile-panel" id="mobilePanel" aria-label="Mobile Navigation">
+          <div class="glass">
+            <a href="#home" data-close-mobile>Home</a>
+            <a href="#about" data-close-mobile>About</a>
+            <a href="#academics" data-close-mobile>Academics</a>
+            <a href="#facilities" data-close-mobile>Facilities</a>
+            <a href="#gallery" data-close-mobile>Gallery</a>
+            <a href="#contact" data-close-mobile>Contact</a>
+            <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap">
+              <a class="btn btn-primary" href="#contact" data-close-mobile><i class="fa-solid fa-file-signature"></i> Admission Open</a>
+              <a class="btn" href="#gallery" data-close-mobile><i class="fa-regular fa-images"></i> Explore Campus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-card glass" data-aos="fade-up" data-aos-duration="900">
+            <span class="kicker"><i class="fa-solid fa-star"></i> Premium Learning Environment</span>
+            <h1 class="hero-title">
+              <span class="shine">Welcome to</span><br />
+              Venganar Vajram Matric Hr. Sec. School
+            </h1>
+            <p class="hero-lead">
+              Empowering Young Minds for a Brighter Tomorrow. Located at Pappireddipatti – 636905, Dharmapuri District.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#gallery"><i class="fa-solid fa-mountain-sun"></i> Explore Campus</a>
+              <a class="btn" href="#contact"><i class="fa-solid fa-door-open"></i> Admission Open</a>
+            </div>
+            <div class="hero-badges">
+              <span class="badge"><i class="fa-solid fa-award"></i> Excellence & Discipline</span>
+              <span class="badge"><i class="fa-solid fa-chalkboard-user"></i> Smart Learning</span>
+              <span class="badge"><i class="fa-solid fa-shield-halved"></i> Safe Campus</span>
+            </div>
+          </div>
+
+          <aside class="hero-side glass" data-aos="fade-left" data-aos-duration="900">
+            <div class="mini">
+              <h4><i class="fa-solid fa-location-dot" style="color: var(--gold); margin-right: 8px"></i> Address</h4>
+              <p>
+                Pappireddipatti – 636905<br />
+                Dharmapuri District, Tamil Nadu
+              </p>
+            </div>
+            <div class="mini">
+              <h4><i class="fa-solid fa-clock" style="color: var(--gold); margin-right: 8px"></i> School Hours</h4>
+              <p>Mon – Fri: 9:00 AM – 4:30 PM<br />Sat: 9:00 AM – 1:00 PM</p>
+            </div>
+            <div class="mini">
+              <h4><i class="fa-solid fa-bullseye" style="color: var(--gold); margin-right: 8px"></i> Our Focus</h4>
+              <p>Academic excellence, values, leadership, communication, and real-world skills.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="kicker"><i class="fa-solid fa-gem"></i> About the School</span>
+            <h2>Where tradition meets modern excellence</h2>
+            <p class="sub">
+              A premium, future-ready learning experience built on strong values, discipline, and world-class facilities.
+            </p>
+          </div>
+        </div>
+
+        <div class="about">
+          <div class="about-media" data-aos="fade-right" data-aos-duration="900" aria-label="Campus image"></div>
+
+          <div class="about-card glass" data-aos="fade-up" data-aos-duration="900">
+            <h3>VENGANAR VAJRAM MATRIC HR. SEC. SCHOOL</h3>
+            <p>
+              We nurture confident learners through a balanced approach to academics, co-curricular growth, and character building.
+              Our classrooms blend modern pedagogy with a caring school culture.
+            </p>
+            <p>
+              With experienced educators, structured programs, and progressive learning spaces, we help students develop curiosity,
+              integrity, and excellence.
+            </p>
+            <ul class="bullets">
+              <li><i class="fa-solid fa-circle-check"></i> Student-centric learning with modern teaching methods</li>
+              <li><i class="fa-solid fa-circle-check"></i> Strong foundation in academics, languages & STEM</li>
+              <li><i class="fa-solid fa-circle-check"></i> Enrichment through sports, arts, and leadership programs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP (CRUD) -->
+    <section class="section" id="leadership">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="kicker"><i class="fa-solid fa-crown"></i> Leadership</span>
+            <h2>Chairman, Founder & Principal</h2>
+            <p class="sub">This section is editable from the Admin panel (Add / Edit / Delete).</p>
+          </div>
+        </div>
+
+        <div class="grid leadership-grid" id="leadershipGrid" data-aos="fade-up" data-aos-duration="900"></div>
+      </div>
+    </section>
+
+    <!-- ACADEMICS -->
+    <section class="section" id="academics">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="kicker"><i class="fa-solid fa-graduation-cap"></i> Academics</span>
+            <h2>Structured learning pathways</h2>
+            <p class="sub">From strong fundamentals to advanced preparation—designed for consistent academic success.</p>
+          </div>
+        </div>
+
+        <div class="grid acad-grid" data-aos="fade-up" data-aos-duration="900">
+          <div class="acad glass">
+            <span class="accent" aria-hidden="true"></span>
+            <div class="icon"><i class="fa-solid fa-seedling"></i></div>
+            <h3>Primary</h3>
+            <p>Joyful learning, literacy & numeracy foundation, creativity, and values-based development.</p>
+          </div>
+          <div class="acad glass">
+            <span class="accent" aria-hidden="true"></span>
+            <div class="icon"><i class="fa-solid fa-book-open"></i></div>
+            <h3>High School</h3>
+            <p>Concept clarity, critical thinking, labs, projects, and structured preparation with mentoring.</p>
+          </div>
+          <div class="acad glass">
+            <span class="accent" aria-hidden="true"></span>
+            <div class="icon"><i class="fa-solid fa-atom"></i></div>
+            <h3>Higher Secondary</h3>
+            <p>Advanced academics with strong guidance, exam readiness, and career-focused support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACILITIES / LABS (CRUD) -->
+    <section class="section" id="facilities">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="kicker"><i class="fa-solid fa-building-columns"></i> Facilities</span>
+            <h2>Modern campus experiences</h2>
+            <p class="sub">Facilities and lab details are editable from the Admin panel (Add / Edit / Delete).</p>
+          </div>
+        </div>
+
+        <div class="grid fac-grid" id="facilitiesGrid" data-aos="fade-up" data-aos-duration="900"></div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" id="stats">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="kicker"><i class="fa-solid fa-chart-line"></i> By the Numbers</span>
+            <h2>Excellence you can measure</h2>
+            <p class="sub">Animated counters for a premium, modern feel.</p>
+          </div>
+        </div>
+
+        <div class="grid stats-grid" data-aos="fade-up" data-aos-duration="900">
+          <div class="stat glass">
+            <p class="num" data-counter data-target="1500" data-suffix="+">0</p>
+            <p class="label">Students</p>
+          </div>
+          <div class="stat glass">
+            <p class="num" data-counter data-target="75" data-suffix="+">0</p>
+            <p class="label">Staff</p>
+          </div>
+          <div class="stat glass">
+            <p class="num" data-counter data-target="100" data-suffix="%">0</p>
+            <p class="label">Results</p>
+          </div>
+          <div class="stat glass">
+            <p class="num" data-counter data-target="25" data-suffix="+">0</p>
+            <p class="label">Years Excellence</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY (CRUD) -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="kicker"><i class="fa-regular fa-images"></i> Gallery</span>
+            <h2>Campus life in frames</h2>
+            <p class="sub">Click any image for a lightbox view. Gallery items are editable from the Admin panel.</p>
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap">
+            <a class="btn" href="#contact"><i class="fa-solid fa-phone"></i> Contact Now</a>
+            <button class="btn" id="resetContentBtn" type="button" title="Reset dynamic content to defaults">
+              <i class="fa-solid fa-rotate"></i> Reset Content
+            </button>
+          </div>
+        </div>
+
+        <div class="grid gallery-grid" id="galleryGrid" data-aos="fade-up" data-aos-duration="900"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="kicker"><i class="fa-solid fa-envelope-open-text"></i> Contact</span>
+            <h2>Let’s connect</h2>
+            <p class="sub">Send an enquiry. (This demo form shows a success message; you can connect it to email/backend later.)</p>
+          </div>
+        </div>
+
+        <div class="contact">
+          <div class="form glass" data-aos="fade-up" data-aos-duration="900">
+            <h3>Enquiry Form</h3>
+            <form id="contactForm">
+              <div class="fields">
+                <div class="field">
+                  <input id="cName" name="name" type="text" placeholder=" " required />
+                  <label for="cName">Your Name</label>
+                </div>
+                <div class="field">
+                  <input id="cPhone" name="phone" type="tel" placeholder=" " required />
+                  <label for="cPhone">Phone Number</label>
+                </div>
+                <div class="field full">
+                  <input id="cEmail" name="email" type="email" placeholder=" " />
+                  <label for="cEmail">Email (optional)</label>
+                </div>
+                <div class="field full">
+                  <textarea id="cMsg" name="message" placeholder=" " required></textarea>
+                  <label for="cMsg">Message</label>
+                </div>
+              </div>
+              <div style="display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap">
+                <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                <button class="btn" type="reset"><i class="fa-solid fa-eraser"></i> Clear</button>
+              </div>
+              <p id="contactStatus" class="muted" style="margin: 10px 0 0"></p>
+            </form>
+          </div>
+
+          <aside class="contact-side glass" data-aos="fade-left" data-aos-duration="900">
+            <h3>School Details</h3>
+            <div class="info">
+              <div class="line">
+                <i class="fa-solid fa-school"></i>
+                <div>
+                  <strong style="display: block; font-family: Montserrat, Poppins, sans-serif; font-weight: 900"
+                    >VENGANAR VAJRAM MATRIC HR. SEC. SCHOOL</strong
+                  >
+                  <span style="color: var(--muted)">Pappireddipatti – 636905, Dharmapuri District</span>
+                </div>
+              </div>
+              <div class="line">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <span style="color: var(--muted)">Phone:</span>
+                  <span>94428 63047, 70101 92906</span>
+                </div>
+              </div>
+              <div class="line">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <span style="color: var(--muted)">Email:</span>
+                  <span>vvschoolp@gmail.com</span>
+                </div>
+              </div>
+              <div class="line">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <div>
+                  <span style="color: var(--muted)">Location:</span>
+                  <span>Pappireddipatti, Dharmapuri</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="map" aria-label="Google map embed">
+              <iframe
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Pappireddipatti%20636905&output=embed"
+                title="Map - Pappireddipatti"
+              ></iframe>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="foot">
+          <div>
+            <h4>Venganar Vajram Matric Hr. Sec. School</h4>
+            <p>
+              A premium learning ecosystem built to empower young minds through excellence, discipline, and future-ready skills.
+            </p>
+            <div class="goldline" aria-hidden="true"></div>
+            <div class="social" aria-label="Social links">
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div>
+            <h4>Quick Links</h4>
+            <p><a href="#about">About</a></p>
+            <p><a href="#academics">Academics</a></p>
+            <p><a href="#facilities">Facilities</a></p>
+            <p><a href="#gallery">Gallery</a></p>
+            <p><a href="#contact">Contact</a></p>
+          </div>
+          <div>
+            <h4>Highlights</h4>
+            <p>Glassmorphism UI • Premium layout</p>
+            <p>Sticky navbar • Smooth scroll</p>
+            <p>Animated counters • Lightbox gallery</p>
+            <p>Built-in Admin CRUD (LocalStorage)</p>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <span>© <span id="year"></span> VENGANAR VAJRAM MATRIC HR. SEC. SCHOOL. All rights reserved.</span>
+          <span class="muted">Designed with a modern premium aesthetic</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Gallery lightbox">
+      <div class="panel">
+        <div class="media" id="lbMedia"></div>
+        <div class="bar">
+          <div class="txt">
+            <strong id="lbTitle">Image</strong>
+            <span id="lbSubtitle">Gallery</span>
+          </div>
+          <button class="btn icon-btn" id="lbClose" aria-label="Close lightbox"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Admin FAB -->
+    <button class="admin-fab" id="adminFab" type="button" aria-label="Open Admin Panel">
+      <i class="fa-solid fa-shield"></i>
+      Admin
+    </button>
+
+    <!-- Admin Modal -->
+    <div class="modal" id="adminModal" role="dialog" aria-modal="true" aria-label="Admin Panel">
+      <div class="sheet">
+        <div class="topbar">
+          <div class="title">
+            <i class="fa-solid fa-gear" style="color: var(--gold)"></i>
+            <div style="min-width: 0">
+              <strong>Admin Panel</strong>
+              <span>Client-side CRUD (stored in LocalStorage)</span>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap">
+            <button class="btn small" id="exportBtn" type="button" title="Export content JSON">
+              <i class="fa-solid fa-file-export"></i> Export
+            </button>
+            <label class="btn small" for="importFile" style="cursor: pointer" title="Import content JSON">
+              <i class="fa-solid fa-file-import"></i> Import
+            </label>
+            <input id="importFile" type="file" accept="application/json" class="hide" />
+            <button class="btn icon-btn" id="adminClose" type="button" aria-label="Close Admin Panel">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="body">
+          <div class="tabs">
+            <button class="tab is-active" data-tab="leadership" type="button"><i class="fa-solid fa-crown"></i> Leadership</button>
+            <button class="tab" data-tab="facilities" type="button"><i class="fa-solid fa-building-columns"></i> Facilities</button>
+            <button class="tab" data-tab="gallery" type="button"><i class="fa-regular fa-images"></i> Gallery</button>
+          </div>
+
+          <div class="panel">
+            <!-- Leadership -->
+            <div class="tab-panel" id="panel-leadership">
+              <h3>Leadership (Chairman / Founder / Principal)</h3>
+              <div class="admin-grid">
+                <div class="admin-card glass">
+                  <h4>Existing</h4>
+                  <div class="admin-list" id="adminLeadershipList"></div>
+                </div>
+                <div class="admin-card glass">
+                  <h4 id="leaderFormTitle">Add New</h4>
+                  <form class="admin-form" id="leaderForm">
+                    <input type="hidden" id="leaderId" />
+                    <div class="fields">
+                      <div class="field">
+                        <input id="leaderName" placeholder=" " required />
+                        <label for="leaderName">Name</label>
+                      </div>
+                      <div class="field">
+                        <select id="leaderRole" required>
+                          <option value="" disabled selected hidden></option>
+                          <option>Chairman</option>
+                          <option>Founder</option>
+                          <option>Principal</option>
+                          <option>Correspondent</option>
+                        </select>
+                        <label for="leaderRole">Role</label>
+                      </div>
+                      <div class="field full">
+                        <input id="leaderQuote" placeholder=" " />
+                        <label for="leaderQuote">Highlight (short line)</label>
+                      </div>
+                      <div class="field full">
+                        <textarea id="leaderDesc" placeholder=" " required></textarea>
+                        <label for="leaderDesc">Description</label>
+                      </div>
+                      <div class="field full">
+                        <input id="leaderContact" placeholder=" " />
+                        <label for="leaderContact">Contact (optional)</label>
+                      </div>
+                    </div>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px">
+                      <button class="btn btn-primary small" type="submit"><i class="fa-solid fa-check"></i> Save</button>
+                      <button class="btn small" id="leaderCancel" type="button"><i class="fa-solid fa-ban"></i> Cancel</button>
+                    </div>
+                    <p class="note">Tip: Use the Edit button on an item to load it into this form.</p>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <!-- Facilities -->
+            <div class="tab-panel hide" id="panel-facilities">
+              <h3>Facilities & Labs</h3>
+              <div class="admin-grid">
+                <div class="admin-card glass">
+                  <h4>Existing</h4>
+                  <div class="admin-list" id="adminFacilitiesList"></div>
+                </div>
+                <div class="admin-card glass">
+                  <h4 id="facFormTitle">Add New</h4>
+                  <form class="admin-form" id="facForm">
+                    <input type="hidden" id="facId" />
+                    <div class="fields">
+                      <div class="field">
+                        <input id="facTitle" placeholder=" " required />
+                        <label for="facTitle">Title</label>
+                      </div>
+                      <div class="field">
+                        <select id="facIcon" required>
+                          <option value="" disabled selected hidden></option>
+                          <option value="fa-chalkboard">Smart Classroom</option>
+                          <option value="fa-microscope">Laboratory</option>
+                          <option value="fa-computer">Computer Lab</option>
+                          <option value="fa-book">Library</option>
+                          <option value="fa-basketball">Sports</option>
+                          <option value="fa-music">Music</option>
+                          <option value="fa-palette">Art</option>
+                          <option value="fa-shield-heart">Safety</option>
+                        </select>
+                        <label for="facIcon">Icon</label>
+                      </div>
+                      <div class="field full">
+                        <textarea id="facDesc" placeholder=" " required></textarea>
+                        <label for="facDesc">Description</label>
+                      </div>
+                    </div>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px">
+                      <button class="btn btn-primary small" type="submit"><i class="fa-solid fa-check"></i> Save</button>
+                      <button class="btn small" id="facCancel" type="button"><i class="fa-solid fa-ban"></i> Cancel</button>
+                    </div>
+                    <p class="note">Add labs here too (Physics / Chemistry / Biology / Computer, etc.).</p>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gallery -->
+            <div class="tab-panel hide" id="panel-gallery">
+              <h3>Gallery</h3>
+              <div class="admin-grid">
+                <div class="admin-card glass">
+                  <h4>Existing</h4>
+                  <div class="admin-list" id="adminGalleryList"></div>
+                </div>
+                <div class="admin-card glass">
+                  <h4 id="galFormTitle">Add New</h4>
+                  <form class="admin-form" id="galForm">
+                    <input type="hidden" id="galId" />
+                    <div class="fields">
+                      <div class="field full">
+                        <input id="galTitle" placeholder=" " required />
+                        <label for="galTitle">Title</label>
+                      </div>
+                      <div class="field full">
+                        <input id="galUrl" placeholder=" " required />
+                        <label for="galUrl">Image URL</label>
+                      </div>
+                      <div class="field full">
+                        <input id="galSubtitle" placeholder=" " />
+                        <label for="galSubtitle">Subtitle (optional)</label>
+                      </div>
+                    </div>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px">
+                      <button class="btn btn-primary small" type="submit"><i class="fa-solid fa-check"></i> Save</button>
+                      <button class="btn small" id="galCancel" type="button"><i class="fa-solid fa-ban"></i> Cancel</button>
+                    </div>
+                    <p class="note">Use hosted image links, or later point to your own `assets/` images.</p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      (() => {
+        const $ = (sel, root = document) => root.querySelector(sel);
+        const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+
+        const STORAGE_KEY = "vv_school_site_v1";
+
+        const defaultData = {
+          leadership: [
+            {
+              id: crypto.randomUUID(),
+              name: "Chairman Name",
+              role: "Chairman",
+              quote: "Virtue • Vision • Venture",
+              desc:
+                "Our mission is to provide a safe, disciplined, and inspiring environment where every student can grow with confidence and excellence.",
+              contact: "+91 XXXXXXXXXX",
+            },
+            {
+              id: crypto.randomUUID(),
+              name: "Founder Name",
+              role: "Founder",
+              quote: "Building futures with purpose",
+              desc:
+                "We believe world-class education begins with strong values and modern learning—guiding students to lead with integrity and skill.",
+              contact: "",
+            },
+            {
+              id: crypto.randomUUID(),
+              name: "Principal Name",
+              role: "Principal",
+              quote: "Empowering Young Minds",
+              desc:
+                "We focus on concept clarity, continuous evaluation, and holistic development to ensure every learner thrives academically and personally.",
+              contact: "vvschoolp@gmail.com",
+            },
+          ],
+          facilities: [
+            {
+              id: crypto.randomUUID(),
+              title: "Smart Classrooms",
+              icon: "fa-chalkboard",
+              desc: "Interactive learning with digital content, visual aids, and student engagement tools.",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Advanced Laboratories",
+              icon: "fa-microscope",
+              desc: "Well-equipped Physics, Chemistry & Biology labs for hands-on discovery and experiments.",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Digital Library",
+              icon: "fa-book",
+              desc: "A rich collection of books and digital resources to build reading habits and research skills.",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Sports Academy",
+              icon: "fa-basketball",
+              desc: "Training and facilities to promote fitness, teamwork, and competitive spirit.",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Computer Lab",
+              icon: "fa-computer",
+              desc: "Modern systems and guided practice for digital literacy and computing fundamentals.",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Safety & Discipline",
+              icon: "fa-shield-heart",
+              desc: "A secure campus with structured supervision and student well-being practices.",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Language & Communication",
+              icon: "fa-book-open",
+              desc: "Programs to strengthen English communication, reading, and presentation skills.",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Arts & Culture",
+              icon: "fa-palette",
+              desc: "Opportunities in music, art, and cultural events to nurture creativity and confidence.",
+            },
+          ],
+          gallery: [
+            {
+              id: crypto.randomUUID(),
+              title: "Modern Classroom",
+              subtitle: "Interactive learning",
+              url: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=70",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Library & Reading",
+              subtitle: "Knowledge hub",
+              url: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1400&q=70",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Science Lab",
+              subtitle: "Hands-on experiments",
+              url: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1400&q=70",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Sports & Fitness",
+              subtitle: "Team spirit",
+              url: "https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1400&q=70",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Campus Culture",
+              subtitle: "Events & activities",
+              url: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1400&q=70",
+            },
+            {
+              id: crypto.randomUUID(),
+              title: "Student Leadership",
+              subtitle: "Confidence & values",
+              url: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=70",
+            },
+          ],
+        };
+
+        function loadData() {
+          try {
+            const raw = localStorage.getItem(STORAGE_KEY);
+            if (!raw) return structuredClone(defaultData);
+            const parsed = JSON.parse(raw);
+            return {
+              leadership: Array.isArray(parsed.leadership) ? parsed.leadership : structuredClone(defaultData.leadership),
+              facilities: Array.isArray(parsed.facilities) ? parsed.facilities : structuredClone(defaultData.facilities),
+              gallery: Array.isArray(parsed.gallery) ? parsed.gallery : structuredClone(defaultData.gallery),
+            };
+          } catch {
+            return structuredClone(defaultData);
+          }
+        }
+
+        function saveData(next) {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+        }
+
+        let data = loadData();
+
+        // Navbar solid on scroll
+        const nav = $("#nav");
+        const onScroll = () => {
+          const solid = window.scrollY > 30;
+          nav.classList.toggle("is-solid", solid);
+        };
+        window.addEventListener("scroll", onScroll, { passive: true });
+        onScroll();
+
+        // Mobile menu
+        const hamburger = $("#hamburger");
+        const mobilePanel = $("#mobilePanel");
+        function setMobileOpen(open) {
+          mobilePanel.classList.toggle("is-open", open);
+          hamburger.setAttribute("aria-expanded", String(open));
+          hamburger.innerHTML = open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+        }
+        hamburger?.addEventListener("click", () => setMobileOpen(!mobilePanel.classList.contains("is-open")));
+        $$("[data-close-mobile]").forEach((a) => a.addEventListener("click", () => setMobileOpen(false)));
+
+        // AOS init
+        if (window.AOS) {
+          AOS.init({
+            once: true,
+            offset: 80,
+            duration: 800,
+            easing: "ease-out-cubic",
+          });
+        }
+
+        // Renderers
+        const leadershipGrid = $("#leadershipGrid");
+        const facilitiesGrid = $("#facilitiesGrid");
+        const galleryGrid = $("#galleryGrid");
+
+        function escapeHTML(s) {
+          return String(s)
+            .replaceAll("&", "&amp;")
+            .replaceAll("<", "&lt;")
+            .replaceAll(">", "&gt;")
+            .replaceAll('"', "&quot;")
+            .replaceAll("'", "&#039;");
+        }
+
+        function renderLeadership() {
+          leadershipGrid.innerHTML = data.leadership
+            .map((l) => {
+              const role = (l.role || "").toLowerCase();
+              let avatarHtml = "";
+              if (role.includes("chair")) {
+                avatarHtml = '<img src="chairman.png%20-%20Copy.jpg" alt="Chairman" />';
+              } else if (role.includes("principal")) {
+                avatarHtml = '<img src="principal.png" alt="Principal" />';
+              } else if (role.includes("found")) {
+                avatarHtml = '<img src="VV%20School%20Founder%20-%20Copy.jpg" alt="Founder" />';
+              } else {
+                const icon =
+                  role.includes("principal") ? "fa-chalkboard-user" : role.includes("director") ? "fa-user-tie" : "fa-people-group";
+                avatarHtml = `<i class="fa-solid ${icon}"></i>`;
+              }
+              return `
+                <article class="leader glass">
+                  <div class="top">
+                    <div class="avatar" aria-hidden="true">${avatarHtml}</div>
+                    <div>
+                      <h4>${escapeHTML(l.name || "")}</h4>
+                      <p class="role">${escapeHTML(l.role || "")}</p>
+                    </div>
+                  </div>
+                  <p class="desc">${escapeHTML(l.desc || "")}</p>
+                  <div class="meta">
+                    ${l.quote ? `<span class="chip"><i class="fa-solid fa-quote-left"></i>${escapeHTML(l.quote)}</span>` : ""}
+                    ${l.contact ? `<span class="chip"><i class="fa-solid fa-address-card"></i>${escapeHTML(l.contact)}</span>` : ""}
+                  </div>
+                </article>
+              `;
+            })
+            .join("");
+        }
+
+        function renderFacilities() {
+          facilitiesGrid.innerHTML = data.facilities
+            .map(
+              (f) => `
+              <article class="fac glass">
+                <div class="row">
+                  <div class="pill" aria-hidden="true"><i class="fa-solid ${escapeHTML(f.icon || "fa-star")}"></i></div>
+                  <span class="chip"><i class="fa-solid fa-sparkles"></i> Premium</span>
+                </div>
+                <h4>${escapeHTML(f.title || "")}</h4>
+                <p>${escapeHTML(f.desc || "")}</p>
+              </article>
+            `,
+            )
+            .join("");
+        }
+
+        function renderGallery() {
+          galleryGrid.innerHTML = data.gallery
+            .map(
+              (g) => `
+              <div class="g-item" role="button" tabindex="0" data-gid="${escapeHTML(g.id)}" aria-label="Open ${escapeHTML(
+                g.title || "image",
+              )}">
+                <div class="img" style="background-image:url('${escapeHTML(g.url || "")}')"></div>
+                <div class="cap">
+                  <div>
+                    <strong>${escapeHTML(g.title || "")}</strong>
+                    <span>${escapeHTML(g.subtitle || "Campus")}</span>
+                  </div>
+                  <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </div>
+              </div>
+            `,
+            )
+            .join("");
+        }
+
+        function renderAll() {
+          renderLeadership();
+          renderFacilities();
+          renderGallery();
+        }
+
+        renderAll();
+
+        // Lightbox
+        const lightbox = $("#lightbox");
+        const lbMedia = $("#lbMedia");
+        const lbTitle = $("#lbTitle");
+        const lbSubtitle = $("#lbSubtitle");
+        const lbClose = $("#lbClose");
+
+        function openLightbox(g) {
+          lbMedia.style.backgroundImage = `url('${g.url}')`;
+          lbTitle.textContent = g.title || "Image";
+          lbSubtitle.textContent = g.subtitle || "Gallery";
+          lightbox.classList.add("is-open");
+          document.body.style.overflow = "hidden";
+          lbClose.focus();
+        }
+        function closeLightbox() {
+          lightbox.classList.remove("is-open");
+          document.body.style.overflow = "";
+        }
+        lbClose.addEventListener("click", closeLightbox);
+        lightbox.addEventListener("click", (e) => {
+          if (e.target === lightbox) closeLightbox();
+        });
+        window.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") {
+            if (lightbox.classList.contains("is-open")) closeLightbox();
+            if ($("#adminModal").classList.contains("is-open")) closeAdmin();
+          }
+        });
+
+        galleryGrid.addEventListener("click", (e) => {
+          const item = e.target.closest(".g-item");
+          if (!item) return;
+          const id = item.getAttribute("data-gid");
+          const g = data.gallery.find((x) => x.id === id);
+          if (g) openLightbox(g);
+        });
+        galleryGrid.addEventListener("keydown", (e) => {
+          if (e.key !== "Enter" && e.key !== " ") return;
+          const item = e.target.closest(".g-item");
+          if (!item) return;
+          e.preventDefault();
+          const id = item.getAttribute("data-gid");
+          const g = data.gallery.find((x) => x.id === id);
+          if (g) openLightbox(g);
+        });
+
+        // Animated counters
+        function animateCounter(el) {
+          const target = Number(el.getAttribute("data-target") || "0");
+          const suffix = el.getAttribute("data-suffix") || "";
+          const start = 0;
+          const duration = 1100;
+          const startTime = performance.now();
+
+          const step = (now) => {
+            const t = Math.min(1, (now - startTime) / duration);
+            const eased = 1 - Math.pow(1 - t, 3);
+            const value = Math.round(start + (target - start) * eased);
+            el.textContent = `${value}${suffix}`;
+            if (t < 1) requestAnimationFrame(step);
+          };
+          requestAnimationFrame(step);
+        }
+
+        const counters = $$("[data-counter]");
+        const counterObserver = new IntersectionObserver(
+          (entries, obs) => {
+            for (const entry of entries) {
+              if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                obs.unobserve(entry.target);
+              }
+            }
+          },
+          { threshold: 0.35 },
+        );
+        counters.forEach((c) => counterObserver.observe(c));
+
+        // Contact form (demo)
+        const contactForm = $("#contactForm");
+        const contactStatus = $("#contactStatus");
+        contactForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          contactStatus.textContent = "Message sent successfully. Our team will contact you soon.";
+          contactForm.reset();
+        });
+
+        // Footer year
+        $("#year").textContent = String(new Date().getFullYear());
+
+        // Reset content button
+        $("#resetContentBtn").addEventListener("click", () => {
+          if (!confirm("Reset dynamic content (leadership, facilities, gallery) to defaults?")) return;
+          data = structuredClone(defaultData);
+          saveData(data);
+          renderAll();
+          refreshAdminLists();
+        });
+
+        // Admin CRUD
+        const adminFab = $("#adminFab");
+        const adminModal = $("#adminModal");
+        const adminClose = $("#adminClose");
+        const exportBtn = $("#exportBtn");
+        const importFile = $("#importFile");
+
+        function openAdmin() {
+          adminModal.classList.add("is-open");
+          document.body.style.overflow = "hidden";
+          refreshAdminLists();
+          $(".tab.is-active")?.focus();
+        }
+        function closeAdmin() {
+          adminModal.classList.remove("is-open");
+          document.body.style.overflow = "";
+        }
+
+        adminFab.addEventListener("click", openAdmin);
+        adminClose.addEventListener("click", closeAdmin);
+        adminModal.addEventListener("click", (e) => {
+          if (e.target === adminModal) closeAdmin();
+        });
+
+        // Tabs
+        $$(".tab").forEach((t) =>
+          t.addEventListener("click", () => {
+            $$(".tab").forEach((x) => x.classList.remove("is-active"));
+            t.classList.add("is-active");
+            const key = t.getAttribute("data-tab");
+            $$(".tab-panel").forEach((p) => p.classList.add("hide"));
+            $(`#panel-${key}`).classList.remove("hide");
+          }),
+        );
+
+        // Leadership CRUD
+        const adminLeadershipList = $("#adminLeadershipList");
+        const leaderForm = $("#leaderForm");
+        const leaderFormTitle = $("#leaderFormTitle");
+        const leaderId = $("#leaderId");
+        const leaderName = $("#leaderName");
+        const leaderRole = $("#leaderRole");
+        const leaderQuote = $("#leaderQuote");
+        const leaderDesc = $("#leaderDesc");
+        const leaderContact = $("#leaderContact");
+        const leaderCancel = $("#leaderCancel");
+
+        function clearLeaderForm() {
+          leaderFormTitle.textContent = "Add New";
+          leaderId.value = "";
+          leaderName.value = "";
+          leaderRole.value = "";
+          leaderQuote.value = "";
+          leaderDesc.value = "";
+          leaderContact.value = "";
+        }
+        leaderCancel.addEventListener("click", clearLeaderForm);
+
+        leaderForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const payload = {
+            id: leaderId.value || crypto.randomUUID(),
+            name: leaderName.value.trim(),
+            role: leaderRole.value.trim(),
+            quote: leaderQuote.value.trim(),
+            desc: leaderDesc.value.trim(),
+            contact: leaderContact.value.trim(),
+          };
+
+          const idx = data.leadership.findIndex((x) => x.id === payload.id);
+          if (idx >= 0) data.leadership[idx] = payload;
+          else data.leadership.unshift(payload);
+
+          saveData(data);
+          renderLeadership();
+          refreshAdminLists();
+          clearLeaderForm();
+        });
+
+        function editLeader(id) {
+          const l = data.leadership.find((x) => x.id === id);
+          if (!l) return;
+          leaderFormTitle.textContent = "Edit";
+          leaderId.value = l.id;
+          leaderName.value = l.name || "";
+          leaderRole.value = l.role || "";
+          leaderQuote.value = l.quote || "";
+          leaderDesc.value = l.desc || "";
+          leaderContact.value = l.contact || "";
+          leaderName.focus();
+        }
+        function deleteLeader(id) {
+          if (!confirm("Delete this leadership profile?")) return;
+          data.leadership = data.leadership.filter((x) => x.id !== id);
+          saveData(data);
+          renderLeadership();
+          refreshAdminLists();
+          if (leaderId.value === id) clearLeaderForm();
+        }
+
+        // Facilities CRUD
+        const adminFacilitiesList = $("#adminFacilitiesList");
+        const facForm = $("#facForm");
+        const facFormTitle = $("#facFormTitle");
+        const facId = $("#facId");
+        const facTitle = $("#facTitle");
+        const facIcon = $("#facIcon");
+        const facDesc = $("#facDesc");
+        const facCancel = $("#facCancel");
+
+        function clearFacForm() {
+          facFormTitle.textContent = "Add New";
+          facId.value = "";
+          facTitle.value = "";
+          facIcon.value = "";
+          facDesc.value = "";
+        }
+        facCancel.addEventListener("click", clearFacForm);
+
+        facForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const payload = {
+            id: facId.value || crypto.randomUUID(),
+            title: facTitle.value.trim(),
+            icon: facIcon.value.trim(),
+            desc: facDesc.value.trim(),
+          };
+          const idx = data.facilities.findIndex((x) => x.id === payload.id);
+          if (idx >= 0) data.facilities[idx] = payload;
+          else data.facilities.unshift(payload);
+          saveData(data);
+          renderFacilities();
+          refreshAdminLists();
+          clearFacForm();
+        });
+
+        function editFacility(id) {
+          const f = data.facilities.find((x) => x.id === id);
+          if (!f) return;
+          facFormTitle.textContent = "Edit";
+          facId.value = f.id;
+          facTitle.value = f.title || "";
+          facIcon.value = f.icon || "";
+          facDesc.value = f.desc || "";
+          facTitle.focus();
+        }
+        function deleteFacility(id) {
+          if (!confirm("Delete this facility?")) return;
+          data.facilities = data.facilities.filter((x) => x.id !== id);
+          saveData(data);
+          renderFacilities();
+          refreshAdminLists();
+          if (facId.value === id) clearFacForm();
+        }
+
+        // Gallery CRUD
+        const adminGalleryList = $("#adminGalleryList");
+        const galForm = $("#galForm");
+        const galFormTitle = $("#galFormTitle");
+        const galId = $("#galId");
+        const galTitle = $("#galTitle");
+        const galUrl = $("#galUrl");
+        const galSubtitle = $("#galSubtitle");
+        const galCancel = $("#galCancel");
+
+        function clearGalForm() {
+          galFormTitle.textContent = "Add New";
+          galId.value = "";
+          galTitle.value = "";
+          galUrl.value = "";
+          galSubtitle.value = "";
+        }
+        galCancel.addEventListener("click", clearGalForm);
+
+        galForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const payload = {
+            id: galId.value || crypto.randomUUID(),
+            title: galTitle.value.trim(),
+            subtitle: galSubtitle.value.trim(),
+            url: galUrl.value.trim(),
+          };
+          const idx = data.gallery.findIndex((x) => x.id === payload.id);
+          if (idx >= 0) data.gallery[idx] = payload;
+          else data.gallery.unshift(payload);
+          saveData(data);
+          renderGallery();
+          refreshAdminLists();
+          clearGalForm();
+        });
+
+        function editGallery(id) {
+          const g = data.gallery.find((x) => x.id === id);
+          if (!g) return;
+          galFormTitle.textContent = "Edit";
+          galId.value = g.id;
+          galTitle.value = g.title || "";
+          galUrl.value = g.url || "";
+          galSubtitle.value = g.subtitle || "";
+          galTitle.focus();
+        }
+        function deleteGallery(id) {
+          if (!confirm("Delete this gallery item?")) return;
+          data.gallery = data.gallery.filter((x) => x.id !== id);
+          saveData(data);
+          renderGallery();
+          refreshAdminLists();
+          if (galId.value === id) clearGalForm();
+        }
+
+        function refreshAdminLists() {
+          adminLeadershipList.innerHTML = data.leadership
+            .map(
+              (l) => `
+              <div class="item-row">
+                <div class="txt">
+                  <strong>${escapeHTML(l.role || "Leadership")} • ${escapeHTML(l.name || "")}</strong>
+                  <span>${escapeHTML(l.quote || l.desc || "")}</span>
+                </div>
+                <div class="row-actions">
+                  <button class="btn small" type="button" data-action="editLeader" data-id="${escapeHTML(l.id)}">
+                    <i class="fa-solid fa-pen"></i>
+                  </button>
+                  <button class="btn small danger" type="button" data-action="deleteLeader" data-id="${escapeHTML(l.id)}">
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            `,
+            )
+            .join("");
+
+          adminFacilitiesList.innerHTML = data.facilities
+            .map(
+              (f) => `
+              <div class="item-row">
+                <div class="txt">
+                  <strong>${escapeHTML(f.title || "")}</strong>
+                  <span>${escapeHTML(f.desc || "")}</span>
+                </div>
+                <div class="row-actions">
+                  <button class="btn small" type="button" data-action="editFacility" data-id="${escapeHTML(f.id)}">
+                    <i class="fa-solid fa-pen"></i>
+                  </button>
+                  <button class="btn small danger" type="button" data-action="deleteFacility" data-id="${escapeHTML(f.id)}">
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            `,
+            )
+            .join("");
+
+          adminGalleryList.innerHTML = data.gallery
+            .map(
+              (g) => `
+              <div class="item-row">
+                <div class="txt">
+                  <strong>${escapeHTML(g.title || "")}</strong>
+                  <span>${escapeHTML(g.url || "")}</span>
+                </div>
+                <div class="row-actions">
+                  <button class="btn small" type="button" data-action="editGallery" data-id="${escapeHTML(g.id)}">
+                    <i class="fa-solid fa-pen"></i>
+                  </button>
+                  <button class="btn small danger" type="button" data-action="deleteGallery" data-id="${escapeHTML(g.id)}">
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            `,
+            )
+            .join("");
+        }
+
+        adminModal.addEventListener("click", (e) => {
+          const btn = e.target.closest("button[data-action]");
+          if (!btn) return;
+          const action = btn.getAttribute("data-action");
+          const id = btn.getAttribute("data-id");
+          if (!action || !id) return;
+          if (action === "editLeader") editLeader(id);
+          if (action === "deleteLeader") deleteLeader(id);
+          if (action === "editFacility") editFacility(id);
+          if (action === "deleteFacility") deleteFacility(id);
+          if (action === "editGallery") editGallery(id);
+          if (action === "deleteGallery") deleteGallery(id);
+        });
+
+        // Export / Import
+        exportBtn.addEventListener("click", () => {
+          const payload = {
+            exportedAt: new Date().toISOString(),
+            data,
+          };
+          const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement("a");
+          a.href = url;
+          a.download = "vv-school-content.json";
+          document.body.appendChild(a);
+          a.click();
+          a.remove();
+          URL.revokeObjectURL(url);
+        });
+
+        importFile.addEventListener("change", async (e) => {
+          const file = e.target.files?.[0];
+          if (!file) return;
+          try {
+            const text = await file.text();
+            const parsed = JSON.parse(text);
+            const next = parsed?.data ?? parsed;
+            if (!next || typeof next !== "object") throw new Error("Invalid JSON");
+            const normalized = {
+              leadership: Array.isArray(next.leadership) ? next.leadership : [],
+              facilities: Array.isArray(next.facilities) ? next.facilities : [],
+              gallery: Array.isArray(next.gallery) ? next.gallery : [],
+            };
+            data = normalized;
+            saveData(data);
+            renderAll();
+            refreshAdminLists();
+            clearLeaderForm();
+            clearFacForm();
+            clearGalForm();
+            alert("Import completed.");
+          } catch (err) {
+            alert("Import failed. Please select a valid JSON export file.");
+          } finally {
+            importFile.value = "";
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
+
